@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Katelin Hong</title>
+<meta name="description" content="Portfolio and projects by Katelin Hong.">
+<link rel="icon" href="images/ginkgo.png">
+
+<!-- Edu SA Hand for the page, Nunito for the quick view sidebar -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Nunito:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <h1 class="name">Katelin Hong</h1>
+
+    <nav class="nav" aria-label="Jump to section">
+      <!-- Ginkgo: back to the top / about -->
+      <button class="nav__btn" id="ginkgoBtn" type="button" aria-label="Go to the top of the page">
+        <img src="images/ginkgo.png" alt="" width="52" height="51">
+      </button>
+
+      <!-- Folder: jump to projects. Swaps to the open folder while you're in that section. -->
+      <button class="nav__btn" id="folderBtn" type="button" aria-label="Go to projects">
+        <img id="folderClosed" src="images/folder-closed.png" alt="" width="52" height="45">
+        <img id="folderOpen"   src="images/folder-open.png"   alt="" width="52" height="40">
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about__box">
+        <p class="about__text">
+        Hello, visitor! I am Katelin, a resourceful, handy, and explorative student in Columbia University's Class of 2028. 
+        </p>
+        <p class="about__text">
+        Creating is my favorite activity. I love learning anything related to mechanical engineering to understand the way existing things work, and to create new systems that will better serve people.
+        </p>
+        <p class="about__text">
+        During my first two years of college, I have explored roles in environmental planning for urban infrastructure, making operation strategies to strengthen the electrical grid, and designing solar/battery systems plus the development plans for communities. These experiences have developed my skills in conceptual system design and quantitative analysis in addition to enriching my perspective on the way engineering interacts with people and the environment.
+        </p>
+        <p class="about__text">
+        Through my mechanical engineering coursework and projects, I have also discovered that I am most energized in technical, hands-on environments where I can design, build, and test physical systems.
+        </p>
+        <p class="about__text">
+        I am looking for a new challenge to explore. If you have one in mind, email me at klh2187@columbia.edu.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="projects" id="projects" aria-label="Projects">
+    <div class="wrap">
+      <ul class="projects__grid">
+
+        <!--
+          Each project keeps its own quick view content in a <template>:
+            data-qv-media  -> the images, stacked and scrollable
+            data-qv-copy   -> the pinned sidebar text
+          Add or remove <img> tags freely. To add a project, copy a whole <li>.
+          Put a thumbnail in the square with:
+            <div class="project__thumb"><img src="images/thumb.png" alt=""></div>
+        -->
+
+        <li class="project">
+          <button class="project__link" type="button">
+            <div class="project__thumb"><img src="images/boat_2.png" alt="Isometric view of boat modeled in SolidWorks"></div>
+            <p class="project__title">Toy boat</p>
+          </button>
+
+          <template class="project__detail">
+            <div data-qv-media>
+              <img src="images/boat_2.png" alt="Isometric view of boat modeled in SolidWorks">
+              <img src="images/boat_3.png" alt="Exploded view of boat modeled in SolidWorks">
+              <img src="images/boat_1.png" alt="Drawing sheet of exploded view boat">
+            </div>
+            <div data-qv-copy>
+              <h2>Boat Computer Model</h2>
+              <p><b>Objective</b>: Reverse engineer a toy boat and recreate it as a detailed 3D CAD assembly in SolidWorks.</p>
+              <p><b>Contribution</b>: Measured each component and produced hand-drawn engineering sketches. Modeled the individual parts in SolidWorks and assembled them into a complete digital replica. Preserved aesthetic details and realistic attachment points so that every component was physically supported as in the original product.</p>
+              <p><b>Skills built</b>: SolidWorks part modeling, assembly modeling, reverse engineering, and applying physical measurements to a CAD model.</p>
+
+            </div>
+          </template>
+        </li>
+
+        <li class="project">
+          <button class="project__link" type="button">
+            <div class="project__thumb"><img src="images/math_adventure_5.png" alt="Front view of math adventure toy"></div>
+            <p class="project__title">Addition and subtraction toy</p>
+          </button>
+
+          <template class="project__detail">
+            <div data-qv-media>
+              <img src="images/math_adventure_6.png" alt="Isometric view of math adventure toy">
+              <img src="images/math_adventure_5.png" alt="Front view of math adventure toy">
+              <img src="images/math_adventure_4.png" alt="Back view of math adventure toy">
+              <img src="images/math_adventure_7.png" alt="Right view of math adventure toy">
+              <img src="images/math_adventure_8.png" alt="Top view of math adventure toy">
+              <video src="images/math_adventure_9.mp4" alt="Video demonstration of math adventure toy" controls muted playsinline></video>
+            </div>
+            <div data-qv-copy>
+              <h2>Addition and subtraction toy</h2>
+              <p><b>Objective</b>: Design a mechanical toy that teaches 4-7 year old children to add and subtract single digits. The toy had to go beyond simple counting, improve on an existing concept or introduce a novel one, avoid loose parts, and exclude negative numbers. </p>
+              <p><b>Contribution</b>: Researched early arithmetic education and existing educational toys, then developed a design that met the learning and safety requirements while being engaging for a young child. Modeled all custom components in SolidWorks, assembled the complete toy with standard off-the-shelf hardware, and created a full engineering drawing packet.</p>
+              <p><b>Skills built</b>: SolidWorks part modeling, assemblies, and engineering drawings; market and product research.
+            </div>
+          </template>
+        </li>
+
+        <li class="project">
+          <button class="project__link" type="button">
+            <div class="project__thumb"><img src="images/slot_machine_2.png" alt="screenshot of Logicly slot machine"></div>
+            <p class="project__title">Two-wheel slot machine</p>
+          </button>
+
+          <template class="project__detail">
+            <div data-qv-media>
+              <img src="images/slot_machine_2.png" alt="slot machine">
+              <video src="images/slot_machine_1.mp4" alt="Video demonstration of slot machine" controls muted playsinline></video>
+            </div>
+            <div data-qv-copy>
+              <h2>Two-wheel slot machine</h2>
+              <p><b>Objective</b>: Design a digital system that simulates the gameplay of a two-wheel slot machine.</p>
+              <p><b>Contribution</b>: Designed a digital circuit that controls two independently stopping wheels (implemented as counters), stores their states, and determines win/lose outcomes using sequential and combinational logic. Built, tested, and refined the system in Logicly. </p>
+              <p><b>Skills built</b>: Digital circuit design, combinational and sequential logic, Logicly 
+            </div>
+          </template>
+        </li>
+
+        <li class="project">
+          <button class="project__link" type="button">
+            <div class="project__thumb"><img src="images/minimum_wage_1.png" alt="sample graph from paper"></div>
+            <p class="project__title">Data driven model to determine the optimal minimum wage in NYC</p>
+          </button>
+
+          <template class="project__detail">
+            <div data-qv-media>
+              <img src="images/minimum_wage_1.png" alt="sample graph from paper">
+            </div>
+            <div data-qv-copy>
+              <h2>Data driven model to determine the optimal minimum wage in NYC</h2>
+              <p><b>Objective</b>: Test whether an appropriate minimum wage for present-day NYC could be estimated by adjusting a historically strong minimum wage for inflation. </p>
+              <p><b>Contribution</b>: Developed the hypothesis and wrote the Python code to clean and analyze NYC minimum wage and CPI data, calculate annual inflation rates, and determine what the 1968 minimum wage would be today if it had grown with inflation. Interpreted the results and identified why inflation alone was insufficient to determine an ideal minimum wage. </p>
+              <p><b>Skills built</b>: Python, Pandas, Plotly, data cleaning, data visualization, data interpretation
+              <p><a class="qv-link" href="files/data_science_report.pdf" target="_blank" rel="noopener">Open the full report (PDF)</a></p>
+            </div>
+          </template>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<dialog class="quickview" id="quickview" aria-label="Project quick view">
+  <button class="quickview__close" id="qvClose" type="button" aria-label="Close quick view">&times;</button>
+  <div class="quickview__inner">
+    <div class="quickview__media" id="qvMedia"></div>
+    <aside class="quickview__side" id="qvCopy"></aside>
+  </div>
+</dialog>
+</body>
+</html>
