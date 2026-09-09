@@ -78,6 +78,28 @@
 
         <li class="project">
           <button class="project__link" type="button">
+            <div class="project__thumb"><img src="images/research_2.png" alt="Graph from paper"></div>
+            <p class="project__title">Ramp Constrained Prefill-Decode Scheduling for Grid-Following LLM Inference</p>
+          </button>
+
+          <template class="project__detail">
+            <div data-qv-media>
+              <img src="images/research_2.png" alt="Graph from paper">
+              <img src="images/research_1.png" alt="Cropped image of optimization model">
+            </div>
+            <div data-qv-copy>
+              <h2>Ramp Constrained Prefill-Decode Scheduling for Grid-Following LLM Inference</h2>
+              <p><b>Objective</b>: Design and evaluate an LLM inference scheduling strategy that balances three competing stakeholder interests: maximizing throughput for data center operators, limiting latency for users, and satisfying power system requirements.</p>
+              <p><b>Contribution</b>: Identified a research gap in existing inference schedulers: prefill and decode workloads are actively scheduled to improve throughput and latency, but not to make server power demand follow grid constraints. Formulated an optimization-based scheduler that selects prefill and decode tasks within each batch to maximize throughput while satisfying latency limits, power ramp constraints, the reality of how a transformer operates, and GPU KV-cache memory capacity. First author of a conference paper submitted for peer review.</p>
+              <p><b>Skills built</b>: Mathematical optimization, LLM inference scheduling, GPU architecture, technical research, literature review, Python</p>
+
+            </div>
+          </template>
+        </li>
+
+
+        <li class="project">
+          <button class="project__link" type="button">
             <div class="project__thumb"><img src="images/boat_2.png" alt="Isometric view of boat modeled in SolidWorks"></div>
             <p class="project__title">Toy boat</p>
           </button>
